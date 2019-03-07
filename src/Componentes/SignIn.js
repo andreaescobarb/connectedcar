@@ -10,6 +10,7 @@ import {
   FormText
 } from "reactstrap";
 import NavBar from "./Navbar.js";
+import Footer from "./Footer";
 export default class SignInForm extends React.Component {
   render() {
     return (
@@ -58,6 +59,7 @@ export default class SignInForm extends React.Component {
             </Form>
           </Card>
         </div>
+        <Footer/>
       </div>
     );
   }
