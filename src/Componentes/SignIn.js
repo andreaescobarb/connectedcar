@@ -9,8 +9,10 @@ import {
   Input,
   FormText
 } from "reactstrap";
+import { Link } from "react-router-dom";
 import NavBar from "./Navbar.js";
 import Footer from "./Footer";
+import SingUp from "./SignUp";
 export default class SignInForm extends React.Component {
   render() {
     return (
@@ -53,13 +55,16 @@ export default class SignInForm extends React.Component {
 
               <FormGroup check row>
                 <Col sm={{ size: 10, offset: 0 }}>
-                  <Button>Confirmar</Button>
+                  <Button size="sm">Confirmar</Button>{" "}
+                  <Button size="sm">
+                    <Link to={"/SingUp.js/"}> Crear Cuenta </Link>
+                  </Button>
                 </Col>
               </FormGroup>
             </Form>
           </Card>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     );
   }
