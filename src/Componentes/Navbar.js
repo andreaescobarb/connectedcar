@@ -11,7 +11,9 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+  import {Link} from 'react-router-dom';
 import logo from '../pictures/connectedcar.PNG';
+import SingIn from "./SignIn";
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -36,10 +38,10 @@ export default class Example extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <Link to={"/SignIn.js/"}>SingIn &nbsp;</Link>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                <Link to={"/SingUp.js"}>SignUp &nbsp;</Link>
               </NavItem>
               
             </Nav>
