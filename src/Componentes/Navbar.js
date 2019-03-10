@@ -1,24 +1,18 @@
-import React from 'react';
+import React from "react";
 import {
   Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
-  import {Link} from 'react-router-dom';
-import logo from '../pictures/connectedcar.PNG';
-import SingIn from "./SignIn";
+  NavItem
+} from "reactstrap";
+import { Link } from "react-router-dom";
+import logo from "../pictures/connectedcar.PNG";
 
 export default class Example extends React.Component {
   constructor(props) {
     super(props);
-
     this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false
@@ -33,7 +27,9 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="" light expand="md">
-          <NavbarBrand href="/"><img src={logo} /></NavbarBrand>
+          <NavbarBrand href="/">
+            <img alt="nada" src={logo} />
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -43,7 +39,6 @@ export default class Example extends React.Component {
               <NavItem>
                 <Link to={"/SingUp.js/"}>SignUp &nbsp;</Link>
               </NavItem>
-              
             </Nav>
           </Collapse>
         </Navbar>
