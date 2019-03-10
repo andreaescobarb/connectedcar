@@ -14,8 +14,8 @@ import {
 export default class Books extends React.Component {
   render() {
     return (
-      <div style={{display: "flex", justifyContent:"center"}}>
-        <Card style={{padding: "40px"}}>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Card style={{ padding: "40px" }}>
           <Form>
             <FormGroup row>
               <Label for="Pick-up Location" sm={4}>
@@ -76,6 +76,11 @@ export default class Books extends React.Component {
                   id="selec"
                   placeholder="select"
                 />
+              </Col>
+            </FormGroup>
+            <FormGroup>
+              <Col sm={{ size: 10, offset: 0 }}>
+                <Button>Alquilar Carro</Button>
               </Col>
             </FormGroup>
           </Form>
