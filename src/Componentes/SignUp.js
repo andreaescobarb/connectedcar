@@ -7,12 +7,11 @@ import {
   FormGroup,
   Label,
   Input,
-  FormText
+  
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import NavBar from "./Navbar.js";
 import Footer from "./Footer";
-import SingIn from "./SignIn";
 export default class SignInForm extends React.Component {
   render() {
     return (
